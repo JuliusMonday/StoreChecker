@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Monday Julius">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge1</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <section class="main-container">
+        <div class="first-container">
+        
+        </div>
+        <div class="second-container">
+            <h1>Closest stores</h1>
+            <div class="postal-section">
+                <p>Postal code <br>
+                    <input type="text" id="location" list="postal-codes" placeholder="5055" name="postal">
+                    <datalist id="postal-codes">
+                        <option value="100001, USA">
+                        <option value="200002, Canada">
+                        <option value="300003, United Kingdom">
+                        <option value="400004, Australia">
+                        <option value="500005, Germany">
+                        <option value="600006, France">
+                        <option value="700007, Japan">
+                        <option value="800008, Brazil">
+                        <option value="900009, India">
+                        <option value="100000, Mexico">
+                        <option value="110000, Spain">
+                        <option value="120000, Italy">
+                        <option value="130000, China">
+                        <option value="140000, South Africa">
+                        <option value="150000, Russia">
+                        <option value="160000, Argentina">
+                        <option value="170000, New Zealand">
+                        <option value="180000, Sweden">
+                        <option value="190000, Norway">
+                        <option value="200000, Denmark">
+                        <option value="210001, Nigeria">
+                        <option value="220001, Ghana">
+                        <option value="230001, Côte d'Ivoire">
+                        <option value="240001, Niger">
+                    </datalist>
+                    <span id="location-icon"> <i class="fas fa-map-marker-alt" ></i> Use my location</span>
+                </p>
+                <div class="store-container">
+                    <div class="store">
+                        <h2 class="store-names">POINT Bergen Sentrum <span class="status-btn1"> Closed </span>
+                        </h2>
+                        <p id="street-address">Standagaten 55-57, 6007 Bergen</p>
+                        <p><i class="far fa-clock" id="clock-icon"></i> <span class="time-range">9:00 - 19:00<span></p>
+                    </div>
+                    <div class="store">
+                        <h2 class="store-names" id="store-names2">POIVestkanten <span class="status-btn2"> open </span>
+                        </h2>
+                        <p id="street-address" class="street-address2">Standagaten 55-57, 6007 Bergen</p>
+                        <p><i class="far fa-clock" id="clock-icon"></i> <span class="time-range">9:00 - 21:00<span></p>
+                    </div>
+                    <button class="view-all-btn" >View All</button>
+                    <button  class="view-all-btn" id="refreshBtn">Refresh</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="scripts.js"></script>
+</body>
+</html>
